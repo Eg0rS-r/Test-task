@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Navigo-black';
+    src: url('./../fonts/Navigo-Black-Web.woff2') format('woff2'),
+        url('./../fonts/Navigo-Black-Web.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Navigo';
+    src: url('./../fonts/Navigo-Bold-Web.woff2') format('woff2'),
+        url('./../fonts/Navigo-Bold-Web.woff') format('woff');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Navigo';
+    src: url('./../fonts/Navigo-Light-Web.woff2') format('woff2'),
+        url('./../fonts/Navigo-Light-Web.woff') format('woff');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Navigo';
+    src: url('./../fonts/Navigo-Regular-Web.woff2') format('woff2'),
+        url('./../fonts/Navigo-Regular-Web.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Hauss';
+    src: url('./../fonts/ALS_Hauss_Variable_2.1.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Hauss';
+    src: url('./../fonts/ALS_Hauss_Medium_2.1.otf') format('truetype');
+    font-weight: 500;
+}

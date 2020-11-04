@@ -1,0 +1,13 @@
+.button {
+    width: fit-content;
+    background-color: #FEE600;
+    padding: 15px 28px;
+    border-radius: 10px;
+    color: #2B2D33;
+    font-weight: 500;
+    cursor: pointer;
+    transition-duration: .3s;
+    &:hover {
+        background-color: #FED500;
+    }
+}

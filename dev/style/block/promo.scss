@@ -1,0 +1,43 @@
+.promo {
+  width: inherit;
+  height: 550px;
+  background-image: url(./../img/Promo_desk_1920x550.jpg);
+  background-position: center;
+  color: #fff;
+}
+
+.promo__sticker {
+  background-color: #3b7cff;
+  width: fit-content;
+  padding: 5px 12px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    padding-top: 9.1%;
+    padding-left: 9.4%;
+    right: -8px;
+    border-radius: 0 0 5px 0;
+    transform: rotate(-45deg);
+    background: linear-gradient(-45deg, #3b7cff 50%, transparent 50%);
+  }
+}
+
+.promo__sticker-mobile {
+  display: none;
+}
+
+.promo__title {
+  max-width: 530px;
+  margin-bottom: 26px;
+}
+
+.text-big {
+  font-size: 100px;
+  line-height: 115px;
+  &__sml {
+    font-size: 72px;
+  }
+}

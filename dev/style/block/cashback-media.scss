@@ -1,0 +1,37 @@
+@media screen and (max-width: 360px) {
+    .cashback__list {
+        flex-wrap: wrap;
+        margin-top: 40px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cashback__item {
+        margin-right: 0;
+        width: 100%;
+        flex: none;
+        margin-bottom: 14px;
+        padding: 42px 26px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .cashback__text {
+        max-width: 150px;
+    }
+
+    .cashback__img {    
+        &--1 {
+            width: 121px;
+        }
+        &--2 {
+            top: 0;
+            width: 105px;
+        }
+        &--3 {
+            width: 120px;
+            right: 14px;
+        }
+    }
+}

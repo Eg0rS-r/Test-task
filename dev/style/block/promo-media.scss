@@ -1,0 +1,45 @@
+@media screen and (max-width: 360px) {
+    .promo {
+        background-image: url("./../img/Promo_mob 3.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 490px;
+    }
+    
+    .promo__sticker {
+        font-weight: 500;
+        &::before {
+            padding-top: 18px;
+            padding-left: 18px;
+        }
+    }
+
+    .promo__sticker-mobile {
+        display: block;
+    }
+
+    .promo__sticker-desktop {
+        display: none;
+    }
+
+    .container--promo {
+        justify-content: flex-start;
+        padding-top: 24px;
+    }
+
+    .button--promo {
+        display: none;
+    }
+
+    .text-big {
+        font-size: 64px;
+        line-height: 84px;
+        &__sml {
+            font-size: 42px;
+        }
+    }
+
+    .promo__title {
+        margin-bottom: 0;
+    }
+}

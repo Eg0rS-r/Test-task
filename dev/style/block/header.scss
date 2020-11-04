@@ -1,0 +1,25 @@
+.container--header {
+    width: inherit;
+    max-width: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo__link {
+    align-self: center;
+}
+
+.contact {
+    text-align: right;
+}
+
+.contcat__text {
+    color: #808185;
+}

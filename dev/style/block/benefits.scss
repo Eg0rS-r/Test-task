@@ -1,0 +1,23 @@
+.container--benefits {
+    padding-top: 58px;
+    padding-bottom: 58px;
+}
+
+.benefits__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.benefits__item {
+    text-align: center;
+}
+
+.benefits__text {
+    color: #808185;
+}
+
+.benefits__big-text {
+    font-size: 64px;
+    line-height: 70px;
+}

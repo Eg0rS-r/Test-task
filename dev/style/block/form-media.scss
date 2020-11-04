@@ -1,0 +1,33 @@
+@media screen and (max-width: 360px) {
+    .steps {
+        flex-wrap: wrap;
+        margin-left: 16px;
+    }
+
+    .steps__item {
+        margin-right: 0;
+        margin-bottom: 32px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .steps__text {
+        font-size: 16px;
+    }
+
+    .form__base {
+        position: relative;
+        left: 0;
+        width: 100%;
+        border-radius: 0;
+        border: none;
+        margin-left: 0;
+        margin-right: 0;
+        background-color: #F4F4F4;
+    }
+
+    .form {
+        margin-bottom: 60px;
+    }
+}

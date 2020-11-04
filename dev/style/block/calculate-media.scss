@@ -1,0 +1,44 @@
+@media screen and (max-width: 360px) {
+    .calculate {
+        background: none;
+    }
+
+    .calculate__base {
+        flex-direction: column;
+        padding: 0;
+        margin-top: 30px;
+    }
+
+    .cont-list__res {
+        font-weight: 400;
+    }
+
+    .cont-list__item {
+        &--last {
+            margin-bottom: 36px;
+        }
+    }
+
+    .total {
+        background-color: #F4F4F4;
+        border-radius: 14px;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .button--total {    
+        margin: 24px auto;
+    }
+
+    .total__item {
+        margin-top: 14px;
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+
+    .total__caption {
+        padding: 12px 28px;
+    }
+}

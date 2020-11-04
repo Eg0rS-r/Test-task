@@ -1,0 +1,37 @@
+.container--form {
+    padding-bottom: 0;
+}
+
+.steps {
+    margin-top: 44px;
+    display: flex;
+    align-self: center;
+}
+
+.steps__item {
+    max-width: 270px;
+    display: flex;
+    margin-right: 40px;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.steps__img {
+    height: min-content;
+    margin-right: 14px;
+}
+
+.form__base {
+    height: 510px;
+    border: 1px #E1E1E3 solid;
+    border-radius: 12px;
+    margin: 44px 88px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form__text {
+    color: #A2A4A6;
+}
