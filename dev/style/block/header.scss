@@ -1,9 +1,8 @@
 .container--header {
-    width: inherit;
     max-width: none;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
     padding: 22px;
 }
@@ -18,6 +17,8 @@
 
 .contact {
     text-align: right;
+    margin-left: auto;
+    padding-top: 3px;
 }
 
 .contcat__text {

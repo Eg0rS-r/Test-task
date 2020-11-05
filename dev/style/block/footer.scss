@@ -5,12 +5,15 @@
 .footer__inf {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
     color: #55575C;
-    padding: 29px 0;
+    padding: 27px 0;
 }
 
 .footer__address {
     font-style: normal;
+    padding-top: 3px;
 }
 
 .footer__legal-frame {

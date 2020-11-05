@@ -1,12 +1,7 @@
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 430px) {
 
     .header {
         padding: 18px 0;
-    }
-
-    .container--header {
-      max-width: 344px;
-      padding: 0 5px;
     }
 
     .contact::before {
@@ -15,10 +10,6 @@
         background-image: url("./../img/contact.svg");
         width: 24px;
         height: 24px;
-    }
-
-    .contact__text, .contact__number {
-        display: none;
     }
 
     .logo__img {

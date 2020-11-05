@@ -1,4 +1,12 @@
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 430px) {
+    .container--mobile {
+        padding-bottom: 30px;
+    }
+
+    .slider {
+        margin-bottom: 30px;
+    }
+
     .slider__view {
         margin: 0;
     }
@@ -10,6 +18,26 @@
 
     .slider__item {
         margin-right: 16px;
+    }
+
+    .slider-prog {
+        display: flex;
+        align-self: center;
+    }
+
+    .slider-prog__item {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        border: 1px #808185 solid;
+        margin-right: 7px;
+        &:last-child {
+            margin-right: 0;
+        }
+        &--active {
+            background-color: #FEE600;
+            border-color: #FEE600;
+        }
     }
     
 }

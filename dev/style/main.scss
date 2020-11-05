@@ -53,12 +53,14 @@ ul > li {
 }
 
 .block-title {
+  text-align: center;
   margin: 0 auto;
 }
 
 .block-title__sub {
   margin: 0 auto;
   color: #808185;
+  text-align: center;
   &--w {
     color: #fff;
   }
@@ -72,7 +74,11 @@ ul > li {
   display: none;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 430px) {
+  .wrapper {
+    margin-bottom: 30px;
+  }
+  
   .container {
     max-width: 334px;
     padding: 0 5px;
@@ -84,7 +90,7 @@ ul > li {
   .button-bot {
     display: block;
     position: fixed;
-    bottom: 0;
+    bottom: 0px;
     width: 100%;
     text-align: center;
     font-weight: 500;
@@ -93,13 +99,7 @@ ul > li {
     padding: 15px 0;
     background-color: #fee600;
     z-index: 100;
-  }
-
-  .block-title {
-    text-align: center;
-    &::first-letter {
-      text-transform: uppercase;
-    }
+    transition-duration: .5s;
   }
 
   .block-title__sub {
@@ -108,6 +108,9 @@ ul > li {
 
   .on-mobile {
     display: block;
+    &--block-title {
+      display: inline;
+    }
   }
 
   .on-desktop {

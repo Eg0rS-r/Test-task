@@ -1,8 +1,9 @@
 .promo {
-  width: inherit;
   height: 550px;
   background-image: url(./../img/Promo_desk_1920x550.jpg);
   background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   color: #fff;
 }
 
@@ -16,9 +17,10 @@
   &::before {
     content: "";
     position: absolute;
-    padding-top: 9.1%;
-    padding-left: 9.4%;
+    padding-top: 20px;
+    padding-left: 20px;
     right: -8px;
+    top: 5px;
     border-radius: 0 0 5px 0;
     transform: rotate(-45deg);
     background: linear-gradient(-45deg, #3b7cff 50%, transparent 50%);

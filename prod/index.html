@@ -26,8 +26,8 @@
         </div>
 
         <a class="contact" href="tel:+78000039210">
-          <p class="contact__number text-normal">8 800 770-75-62</p>
-          <p class="contact__text text-other">Бесплатно по России</p>
+          <p class="contact__number text-normal on-desktop">8 800 770-75-62</p>
+          <p class="contact__text text-other on-desktop">Бесплатно по России</p>
         </a>
 
       </div>
@@ -36,12 +36,12 @@
     <section class="promo">
       <div class="container container--promo">
 
-        <div class="promo__sticker text-caption"><span class="promo__sticker-desktop">Бесплатное
-            обслуживание</span><span class="promo__sticker-mobile">Обслуживание 0₽</span></div>
+        <div class="promo__sticker text-caption"><span class="on-desktop">Бесплатное
+            обслуживание</span><span class="on-mobile">Обслуживание 0₽</span></div>
         <h1 class="promo__title">Кредитная карта
           с кэшбэком <span class="text-big">1,5<span class="text-big__sml">%</span></span></h1>
         <a class="to-card" href="#card">
-          <div class="button button--promo text-normal">Оформить онлайн</div>
+          <div class="button button--promo text-normal on-desktop">Оформить онлайн</div>
         </a>
 
       </div>
@@ -60,7 +60,7 @@
             <h3 class="benefits__title"><span class="benefits__big-text">0₽</span></h3>
             <p class="benefits__text text-other">обслуживание</p>
           </li>
-          <li class="benefits__item benefits__item--no-mobile">
+          <li class="benefits__item on-desktop">
             <h3 class="benefits__title">до <span class="benefits__big-text">52</span> дней</h3>
             <p class="benefits__text text-other">без процентов</p>
           </li>
@@ -99,10 +99,12 @@
     </section>
 
     <section class="calculate">
-      <div class="container container--calcudlate container--padding">
+      <div class="container container--padding">
 
-        <h2 class="block-title"><span class="on-desktop">Возьмите </span>дополнительный кредит <span
-            class="on-mobile on-mobile--block-titles">на любые цели</span></h2>
+        <h2 class="block-title">
+          <span class="on-desktop">Возьмите дополнительный кредит</span> 
+          <span class="on-mobile">Дополнительный кредит на любые цели</span>
+        </h2>
         <p class="block-title__sub text-normal"><span class="on-desktop">Кредит на любые цели. </span>Получите решение
           за 2 минуты</p>
 
@@ -124,7 +126,7 @@
                 <p class="cont-list__edge-item text-other">2 000 000 ₽</p>
               </div>
             </li>
-            <li class="cont-list__item cont-list__item--last">
+            <li class="cont-list__item">
               <div class="cont-list__text">
                 <p class="cont-list__name text-caption">На какой срок?</p>
                 <label for="duration">
@@ -158,8 +160,8 @@
                 <h3 class="total__title">14 265 ₽</h3>
                 <p class="total__title-sub text-caption">ежемесячный платёж</p>
               </li>
-              <a href="#">
-                <div class="button button--total text-normal">Получить кредит</div>
+              <a href="#" class="total__link">
+                <div class="button text-normal">Получить кредит</div>
               </a>
             </ul>
             <div class="line-hor on-mobile"></div>

@@ -1,28 +1,33 @@
 .cashback__list {
     margin-top: 65px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     color: #FFF;
+    flex-wrap: wrap;
+    margin-right: -24px;
+    margin-bottom: -24px;
 }
 
 .cashback__item {
     background-color: #29476B;
     border-radius: 14px;
     padding: 60px 28px;
+    min-width: 320px;
+    max-width: 365px;
     display: flex;
     align-items: center;
     margin-right: 24px;
+    margin-bottom: 24px;
     flex: 1;
     position: relative;
     overflow: hidden;
-    &:last-child {
-        margin-right: 0;
-    }
 }
 
 .cashback__text {
     max-width: 190px;
     font-weight: 500;
+    position: relative;
+    z-index: 10;
 }
 
 .cashback__img {

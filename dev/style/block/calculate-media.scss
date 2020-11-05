@@ -1,10 +1,13 @@
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 430px) {
     .calculate {
         background: none;
     }
 
+    .cont-list__name {
+        flex: none;
+    }
+
     .calculate__base {
-        flex-direction: column;
         padding: 0;
         margin-top: 30px;
     }
@@ -13,21 +16,16 @@
         font-weight: 400;
     }
 
-    .cont-list__item {
-        &--last {
-            margin-bottom: 36px;
-        }
-    }
-
     .total {
         background-color: #F4F4F4;
         border-radius: 14px;
         flex-direction: column;
         text-align: center;
         padding-top: 20px;
+        margin-top: 36px;
     }
 
-    .button--total {    
+    .total__link {    
         margin: 24px auto;
     }
 

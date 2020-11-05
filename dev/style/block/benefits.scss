@@ -6,11 +6,21 @@
 .benefits__list {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
+    margin-bottom: -40px;
 }
 
 .benefits__item {
     text-align: center;
+    margin-bottom: 40px;
+    padding: 0 10px;
+}
+
+.benefits__title {
+    margin: 0 auto;
+    min-width: max-content;
+    flex: 1;
 }
 
 .benefits__text {

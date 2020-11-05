@@ -1,17 +1,16 @@
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 430px) {
     .cashback__list {
-        flex-wrap: wrap;
         margin-top: 40px;
-        justify-content: center;
-        align-items: center;
+        margin-right: 0;
+        margin-bottom: 0;
     }
 
     .cashback__item {
-        margin-right: 0;
         width: 100%;
-        flex: none;
-        margin-bottom: 14px;
+        min-width: 300px;
         padding: 42px 26px;
+        margin-right: 0;
+        margin-bottom: 14px;
         &:last-child {
             margin-bottom: 0;
         }

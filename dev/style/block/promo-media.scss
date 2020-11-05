@@ -1,34 +1,18 @@
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 430px) {
     .promo {
         background-image: url("./../img/Promo_mob 3.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
         height: 490px;
     }
     
     .promo__sticker {
         font-weight: 500;
-        &::before {
-            padding-top: 18px;
-            padding-left: 18px;
-        }
-    }
-
-    .promo__sticker-mobile {
-        display: block;
-    }
-
-    .promo__sticker-desktop {
-        display: none;
+        padding-top: 6px;
+        padding-bottom: 4px;
     }
 
     .container--promo {
         justify-content: flex-start;
         padding-top: 24px;
-    }
-
-    .button--promo {
-        display: none;
     }
 
     .text-big {
