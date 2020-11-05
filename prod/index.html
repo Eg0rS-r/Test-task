@@ -107,7 +107,7 @@
           за 2 минуты</p>
 
         <div class="calculate__base">
-          
+
           <ul class="cont-list">
             <li class="cont-list__item">
               <div class="cont-list__text">
@@ -313,167 +313,10 @@
     </footer>
 
   </div>
-  
+
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
   <script type="text/javascript" src="./script/jquery.touchSwipe.min.js"></script>
-
-  <script>
-    $(document).ready(function () {
-      var id = $(".to-card").attr('href'),
-        top = $(id).offset().top,
-        bottom = $(id).height();
-      bottom = top + bottom;
-
-      $(".to-card").on("click", function (event) {
-        event.preventDefault();
-        $('body,html').animate({ scrollTop: top + 1 }, 1000);
-      });
-
-      var element = $('.to-card--hide');
-      $(window).scroll(function () {
-        var scroll = $('body, html').scrollTop();
-        if ((scroll > top - 1) && (scroll < bottom - 300)) {
-          $('.to-card--hide').css("bottom", "-100px");
-        } else {
-          $('.to-card--hide').css("bottom", "0px");
-        }
-      });
-
-
-
-
-      var amountText = document.getElementById("amount-value"),
-        amountSlider = document.getElementById("amount"),
-        amountProg = document.getElementById("amount-prog"),
-        amountMax = amountSlider.max;
-
-      amountValue = amountSlider.value;
-      amountText.textContent = amountValue.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ') + " ₽";
-      amountProg.style.width = amountValue / amountMax * 100 + "%";
-
-      amountSlider.oninput = (() => {
-        amountValue = amountSlider.value;
-        amountText.textContent = amountValue.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ') + " ₽";
-        amountProg.style.width = amountValue / amountMax * 100 + "%";
-      });
-
-      var durtText = document.getElementById("dur-value"),
-        durSlider = document.getElementById("duration"),
-        durProg = document.getElementById("dur-prog"),
-        durMax = durSlider.max;
-      durMin = durSlider.min;
-
-      durValue = durSlider.value;
-      durtText.textContent = durValue + " мес.";
-      durProg.style.width = (durValue - durMin) / (durMax - durMin) * 100 + "%";
-
-      durSlider.oninput = (() => {
-        let durValue = durSlider.value;
-        durtText.textContent = durValue + " мес.";
-        durProg.style.width = (durValue - durMin) / (durMax - durMin) * 100 + "%";
-      });
-
-
-
-      const right = document.querySelector(".control--right");
-      const left = document.querySelector(".control--left");
-      const list = document.querySelector(".slider__list");
-      var elemCount = $('.slider__list > li').length,
-        step = $(document).width() <= 360 ? 220 : 242;
-
-      var progList = $("slider-prog > li").toArray()
-
-
-      function changeSlideRight() {
-        var rightSp = $(".slider__list").css('right');
-        rightSp = parseInt(rightSp, 10);
-        if ($(document).width() <= 360) {
-          if (elemCount == $('.slider__list > li').length) {
-            list.style.right = 160 + "px";
-            elemCount -= 1
-          } else if (elemCount == 1) {
-            list.style.right = "0px";
-            elemCount = $('.slider__list > li').length;
-          } else if (elemCount == 2) {
-            list.style.right = rightSp + 160 + "px";
-            elemCount -= 1
-          } else {
-            list.style.right = rightSp + step + "px";
-            elemCount -= 1;
-          }
-        } else {
-          if (elemCount % 4 != 0) {
-            list.style.right = rightSp + step + "px";
-            elemCount -= 1;
-          } else {
-            list.style.right = "0px";
-            elemCount = $('.slider__list > li').length;
-          }
-        }
-
-      }
-
-      right.addEventListener("click", function (event) {
-        event.preventDefault();
-        changeSlideRight();
-      });
-
-      function changeProgSlider() {
-        console.log(progList)
-        console.log(progList[1])
-      }
-
-      function changeSlideLeft() {
-        var rightSp = $(".slider__list").css('right');
-        rightSp = parseInt(rightSp, 10);
-
-        if ($(document).width() <= 360) {
-          if (elemCount == $('.slider__list > li').length) {
-            list.style.right = step * (elemCount - 3) + 320 + "px";
-            elemCount = 1;
-          } else if (elemCount == 1 || elemCount == $('.slider__list > li').length - 1) {
-            list.style.right = rightSp - 160 + "px";
-            elemCount += 1;
-          } else {
-            list.style.right = rightSp - step + "px";
-            elemCount += 1;
-          }
-        } else {
-          if (rightSp == 0) {
-            list.style.right = rightSp + step * (elemCount % 4) + "px";
-            elemCount = 4;
-          } else {
-            list.style.right = rightSp - step + "px";
-            elemCount += 1;
-          }
-        }
-      }
-
-      left.addEventListener("click", function (event) {
-        event.preventDefault();
-        changeSlideLeft()
-      });
-
-      if ($(document).width() <= 360) {
-        $(".slider__list").swipe({
-          swipeLeft: function (event, direction, distance, duration, fingerCount) {
-            changeSlideRight();
-            changeProgSlider();
-          },
-          threshold: 70
-        });
-        $(".slider__list").swipe({
-          swipeRight: function (event, direction, distance, duration, fingerCount) {
-            changeSlideLeft();
-          },
-          threshold: 70
-        });
-      }
-
-
-
-    });
-  </script>
+  <script src="./scirpts/main.min.js"></script>
 
 
 </body>
