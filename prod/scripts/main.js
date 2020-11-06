@@ -46,6 +46,8 @@ $(document).ready(function () {
   const list = document.querySelector(".slider__list");
   var elemCount = $('.slider__list > li').length,
     step = $(document).width() <= 360 ? 220 : 242;
+  var stepAdapt = $(slider__view).width() / $(".slider__list > li")
+  console.log(stepAdapt)
 
   function changeSlideRight() {
     var rightSp = $(".slider__list").css('right');
