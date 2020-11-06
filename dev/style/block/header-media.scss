@@ -1,21 +1,20 @@
 @media screen and (max-width: 430px) {
+  .header {
+    padding: 18px 0;
+  }
 
-    .header {
-        padding: 18px 0;
-    }
+  .contact::before {
+    content: "";
+    display: flex;
+    background-image: url("./../img/contact.svg");
+    width: 24px;
+    height: 24px;
+  }
 
-    .contact::before {
-        content: "";
-        display: flex;
-        background-image: url("./../img/contact.svg");
-        width: 24px;
-        height: 24px;
+  .logo__img {
+    max-height: 28px;
+    &--visa {
+      max-width: 74px;
     }
-
-    .logo__img {
-        max-height: 28px;
-        &--visa {
-            max-width: 74px;
-        }
-    }
+  }
 }

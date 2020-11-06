@@ -1,100 +1,100 @@
 .calculate {
-    background-color: #f4f4f4;
+  background-color: #f4f4f4;
 }
 
 .calculate__base {
-    margin-top: 50px;
-    border-radius: 14px;
-    background-color: #fff;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 50px 60px;
-    min-width: fit-content;
-    max-width: 1010px;
-    width: 100%;
-    align-self: center;
+  margin-top: 50px;
+  border-radius: 14px;
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 60px;
+  min-width: fit-content;
+  max-width: 1010px;
+  width: 100%;
+  align-self: center;
 }
 
 .cont-list {
-    flex: 2;
-    min-width: 307px;
+  flex: 2;
+  min-width: 307px;
 }
 
 .cont-list__text,
 .cont-list__edge {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 .cont-list__res {
-    flex: 2;
-    text-align: right;
+  flex: 2;
+  text-align: right;
 }
 
 .cont-list__name {
-    flex: 1;
+  flex: 1;
 }
 
 .cont-list__item {
-    margin-top: 20px;
-    &:first-child {
-        margin-top: 0px;
-    }
+  margin-top: 20px;
+  &:first-child {
+    margin-top: 0px;
+  }
 }
 
 .cont-list__caption {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 .cont-list__edge-item,
 .cont-list__caption {
-    color: #a2a4a6;
+  color: #a2a4a6;
 }
 
 .cont-list__bar {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  background-color: #e1e1e3;
+  margin-bottom: 15px;
+  &:focus {
+    outline: none;
+  }
+  &::-webkit-slider-thumb {
     -webkit-appearance: none;
-    width: 100%;
-    height: 5px;
-    cursor: pointer;
-    background-color: #e1e1e3;
-    margin-bottom: 15px;
-    &:focus {
-        outline: none;
-    }
-    &::-webkit-slider-thumb {
-        -webkit-appearance: none;
-        height: 35px;
-        width: 35px;
-        border-radius: 50%;
-        background: #fee600;
-        position: relative;
-        z-index: 10;
-    }
-    &::-moz-range-progress {
-        background: #664aff; //this progress background is only shown on Firefox
-    }
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background: #fee600;
+    position: relative;
+    z-index: 10;
+  }
+  &::-moz-range-progress {
+    background: #664aff; //this progress background is only shown on Firefox
+  }
 }
 
 .cont-list__bar-base {
-    position: relative;
+  position: relative;
 }
 
 .range-progress {
-    position: absolute;
-    width: 30%;
-    height: 5px;
-    background-color: #fee600;
-    top: 40%;
-    transform: translateY(-50%);
+  position: absolute;
+  width: 30%;
+  height: 5px;
+  background-color: #fee600;
+  top: 40%;
+  transform: translateY(-50%);
 }
 
 .total {
-    display: flex;
+  display: flex;
 }
 
 .total__list {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }

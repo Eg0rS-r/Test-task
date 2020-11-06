@@ -1,36 +1,36 @@
 @media screen and (max-width: 430px) {
-    .cashback__list {
-        margin-top: 40px;
-        margin-right: 0;
-        margin-bottom: 0;
-    }
+  .cashback__list {
+    margin-top: 40px;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
 
-    .cashback__item {
-        width: 100%;
-        min-width: 300px;
-        padding: 42px 26px;
-        margin-right: 0;
-        margin-bottom: 14px;
-        &:last-child {
-            margin-bottom: 0;
-        }
+  .cashback__item {
+    width: 100%;
+    min-width: 300px;
+    padding: 42px 26px;
+    margin-right: 0;
+    margin-bottom: 14px;
+    &:last-child {
+      margin-bottom: 0;
     }
+  }
 
-    .cashback__text {
-        max-width: 150px;
-    }
+  .cashback__text {
+    max-width: 150px;
+  }
 
-    .cashback__img {    
-        &--1 {
-            width: 121px;
-        }
-        &--2 {
-            top: 0;
-            width: 105px;
-        }
-        &--3 {
-            width: 120px;
-            right: 14px;
-        }
+  .cashback__img {
+    &--1 {
+      width: 121px;
     }
+    &--2 {
+      top: 0;
+      width: 105px;
+    }
+    &--3 {
+      width: 120px;
+      right: 14px;
+    }
+  }
 }

@@ -1,29 +1,29 @@
 @media screen and (max-width: 460px) {
-    .form {
-        margin-bottom: 60px;
-    }
+  .form {
+    margin-bottom: 60px;
+  }
 
-    .steps__list {
-        margin-bottom: 0;
-    }
+  .steps__list {
+    margin-bottom: 0;
+  }
 
-    .steps__item {
-        margin-bottom: 32px;
-        &:last-child {
-            margin-bottom: 0;
-        }
+  .steps__item {
+    margin-bottom: 32px;
+    &:last-child {
+      margin-bottom: 0;
     }
+  }
 
-    .steps__text {
-        font-size: 16px;
-    }
+  .steps__text {
+    font-size: 16px;
+  }
 
-    .form__base {
-        width: 100%;
-        border-radius: 0;
-        border: none;
-        margin-left: 0;
-        margin-right: 0;
-        background-color: #f4f4f4;
-    }
+  .form__base {
+    width: 100%;
+    border-radius: 0;
+    border: none;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: #f4f4f4;
+  }
 }

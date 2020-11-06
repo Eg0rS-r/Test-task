@@ -45,14 +45,17 @@ $(document).ready(function () {
   const left = document.querySelector(".control--left");
   const list = document.querySelector(".slider__list");
   var elemCount = $('.slider__list > li').length,
-    step = $(document).width() <= 360 ? 220 : 242;
-  var stepAdapt = $(slider__view).width() / $(".slider__list > li")
-  console.log(stepAdapt)
+    step = $(document).width() <= 430 ? 220 : 242;
+  var slideCount = $('.slider__list > li').length - Math.floor($(".slider__view").width() / $(".slider__item").outerWidth()) + 1;
+  console.log(slideCount)
+  console.log($(".slider__item").outerWidth())
+
+  
 
   function changeSlideRight() {
     var rightSp = $(".slider__list").css('right');
     rightSp = parseInt(rightSp, 10);
-    if ($(document).width() <= 360) {
+    if ($(document).width() <= 430) {
       if (elemCount == $('.slider__list > li').length) {
         list.style.right = 160 + "px";
         elemCount -= 1
@@ -70,6 +73,10 @@ $(document).ready(function () {
       if (elemCount % 4 != 0) {
         list.style.right = rightSp + step + "px";
         elemCount -= 1;
+        slideCount -= 1;
+      } else if (slideCount != 0)  {
+        list.style.right = rightSp + step + "px";
+        slideCount -= 1;
       } else {
         list.style.right = "0px";
         elemCount = $('.slider__list > li').length;
@@ -87,7 +94,7 @@ $(document).ready(function () {
     var rightSp = $(".slider__list").css('right');
     rightSp = parseInt(rightSp, 10);
 
-    if ($(document).width() <= 360) {
+    if ($(document).width() <= 430) {
       if (elemCount == $('.slider__list > li').length) {
         list.style.right = step * (elemCount - 3) + 320 + "px";
         elemCount = 1;
@@ -114,7 +121,7 @@ $(document).ready(function () {
     changeSlideLeft()
   });
 
-  if ($(document).width() <= 360) {
+  if ($(document).width() <= 430) {
     $(".slider__list").swipe({
       swipeLeft: () => {
         changeSlideRight();

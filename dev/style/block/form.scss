@@ -1,48 +1,48 @@
 .container--form {
-    padding-bottom: 0;
+  padding-bottom: 0;
 }
 
 .form {
-    margin-bottom: 90px;
+  margin-bottom: 90px;
 }
 
 .steps {
-    margin-top: 44px;
-    display: flex;
-    width: 100%;
+  margin-top: 44px;
+  display: flex;
+  width: 100%;
 }
 
 .steps__list {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    align-self: center;
-    margin-bottom: -20px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  align-self: center;
+  margin-bottom: -20px;
 }
 
 .steps__item {
-    width: 320px;
-    display: flex;
-    margin: 0 auto;    
-    padding: 0 18px;
-    margin-bottom: 20px;
+  width: 320px;
+  display: flex;
+  margin: 0 auto;
+  padding: 0 18px;
+  margin-bottom: 20px;
 }
 
 .steps__img {
-    height: min-content;
-    margin-right: 14px;
+  height: min-content;
+  margin-right: 14px;
 }
 
 .form__base {
-    height: 510px;
-    border: 1px #e1e1e3 solid;
-    border-radius: 12px;
-    margin: 44px 88px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 510px;
+  border: 1px #e1e1e3 solid;
+  border-radius: 12px;
+  margin: 44px 88px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .form__text {
-    color: #a2a4a6;
+  color: #a2a4a6;
 }
